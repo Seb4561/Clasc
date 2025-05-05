@@ -11,7 +11,8 @@ import {
   Menu,
   X,
   Clock,
-  PhoneCall
+  PhoneCall,
+  Users
 } from 'lucide-react';
 import ActuarialCalculator from './components/ActuarialCalculator';
 import ChatHint from './components/ChatHint';
@@ -51,6 +52,11 @@ function App() {
       icon: <Scale className="w-12 h-12 text-[#FF6A00]" />,
       title: "Asesoría jurídica",
       description: "Soporte legal especializado en seguridad social"
+    },
+    {
+      icon: <Users className="w-12 h-12 text-[#FF6A00]" />,
+      title: "Asesorías en seguridad social",
+      description: "Orientación especializada para empresas e independientes"
     }
   ];
 
@@ -216,7 +222,7 @@ function App() {
           >
             Nuestros Servicios
           </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -490,6 +496,7 @@ function App() {
                 <li className="text-gray-600 dark:text-gray-300">Liquidación de aportes</li>
                 <li className="text-gray-600 dark:text-gray-300">Cálculos actuariales</li>
                 <li className="text-gray-600 dark:text-gray-300">Asesoría jurídica</li>
+                <li className="text-gray-600 dark:text-gray-300">Asesorías en seguridad social</li>
               </ul>
             </div>
           </div>
