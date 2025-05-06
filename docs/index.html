@@ -24,12 +24,14 @@
               url: 'https://general-runtime.voiceflow.com',
               versionID: 'production',
               voice: {
-                url: "https://runtime-api.voiceflow.com"
+                enabled: false 
               }
             });
           }
-          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+          v.type = "text/javascript"; 
+          s.parentNode.insertBefore(v, s);
       })(document, 'script');
-    </script>
+    </script>    
   </body>
 </html>
