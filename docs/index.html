@@ -17,20 +17,23 @@
 
     <script type="text/javascript">
       (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '67e98322a64cae9480baaf6a' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production',
-            assistant: {
-              disableAutoSpeak: true
-            }
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
-        v.type = "text/javascript"; 
-        s.parentNode.insertBefore(v, s);
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67e98322a64cae9480baaf6a' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              },
+              assistant: {
+                disableAutoSpeak: true
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+          v.type = "text/javascript"; 
+          s.parentNode.insertBefore(v, s);
       })(document, 'script');
     </script>
 
