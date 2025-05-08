@@ -355,7 +355,7 @@ export default function ActuarialCalculator() {
             </div>
           ))}
 
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-4">
           <button
             type="submit"
             className="flex items-center bg-[#FF6A00] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-[#FF8533] hover:shadow-lg transform hover:scale-105"
@@ -363,6 +363,16 @@ export default function ActuarialCalculator() {
             <Calculator className="w-5 h-5 mr-2" />
             Calcular
           </button>
+          
+          <a
+            href="https://www.mintrabajo.gov.co/atencion-al-ciudadano/tramites-y-servicios/mi-calculadora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-[#2A2A2A] dark:bg-[#FF6A00] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-[#404040] dark:hover:bg-[#FF8533] hover:shadow-lg transform hover:scale-105"
+          >
+            <Calculator className="w-5 h-5 mr-2" />
+            Calculadora laboral
+          </a>
         </div>
       </form>
 
