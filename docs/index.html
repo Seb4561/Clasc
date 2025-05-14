@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Clasc - Expertos en liquidación de aportes, cálculos actuariales y asesoría jurídica" />
+    <meta property="og:image" content="/images/clasclogo.jpeg" />
+    <meta property="og:title" content="Clasc" />
+    <meta property="og:description" content="Expertos en liquidación de aportes, cálculos actuariales y asesoría jurídica" />
+    <title>Clasc</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67e98322a64cae9480baaf6a' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+  </body>
+</html>
