@@ -140,7 +140,7 @@ function App() {
               <a href="#testimonios" className="nav-link">Testimonios</a>
               <a href="#contacto" className="nav-link">Contacto</a>
               <a href="#pago" className="nav-link">Pagar</a>
-              <a href="#calculadora" className="nav-link">Calculadora</a>
+              <a href="#calculadora" className="nav-link">Calculadoras</a>
               <button onClick={scrollToContact} className="cta-button">Solicitar Asesoría</button>
             </nav>
 
@@ -254,7 +254,7 @@ function App() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-center mb-12 text-[#2A2A2A] dark:text-gray-100"
           >
-            Calculadora Actuarial
+            Calculadoras
           </motion.h2>
           <ActuarialCalculator />
         </div>

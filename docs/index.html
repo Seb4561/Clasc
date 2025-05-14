@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-BUtiK4Cm.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Clasc - Expertos en liquidación de aportes, cálculos actuariales y asesoría jurídica" />
     <meta property="og:image" content="/images/clasclogo.jpeg" />
     <meta property="og:title" content="Clasc" />
     <meta property="og:description" content="Expertos en liquidación de aportes, cálculos actuariales y asesoría jurídica" />
     <title>Clasc</title>
-    <script type="module" crossorigin src="/assets/index-jyZtMXhO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Bq9Fivoz.css">
   </head>
   <body>
     <div id="root"></div>
-
+    <script type="module" src="/src/main.tsx"></script>
     <script type="text/javascript">
       (function(d, t) {
           var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -25,30 +24,11 @@
               versionID: 'production',
               voice: {
                 url: "https://runtime-api.voiceflow.com"
-              },
-              assistant: {
-                disableAutoSpeak: true
               }
             });
           }
-          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
-          v.type = "text/javascript"; 
-          s.parentNode.insertBefore(v, s);
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
     </script>
-
-    <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const audios = document.querySelectorAll('audio, video');
-        audios.forEach(el => el.pause());
-      });
-    </script>
-
-    <script>
-      window.speechSynthesis.speak = function(_) {
-        console.warn("SpeechSynthesis bloqueado.");
-      };
-    </script>
-
   </body>
 </html>
