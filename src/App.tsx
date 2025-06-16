@@ -84,7 +84,7 @@ function App() {
 
   const handlePhoneClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const phoneNumber = "5731552588346";
+    const phoneNumber = "573152588346";
     const options = [
       { text: "Llamar", url: `tel:+${phoneNumber}` },
       { text: "WhatsApp", url: `https://wa.me/${phoneNumber}` }
@@ -410,7 +410,7 @@ function App() {
                         onClick={handlePhoneClick}
                         className="text-gray-600 dark:text-gray-300 hover:text-[#FF6A00] dark:hover:text-[#FF6A00]"
                       >
-                        315 52588346
+                        3152588346
                       </button>
                     </div>
                   </div>
